@@ -56,18 +56,34 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.container {
-    background-color: red;
+h1, h2, h3, h4, h5 {
+    color: #FFF;
+    text-align: center;
+}
+
+body {
+    background-image: url("../img/1850.jpg");
 }
 
 .tablebox {
-    width: 80%;
+    width:80%;
+    margin: auto;
+    background-image: url("../img/Untitled-1-01.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .tableone {
-    background-color: blue;
+    float: left;
+    display: inline-block; 
+    width: 50%;
+    /*background-color: blue;*/
+}
+
+.tabletwo {
     display: inline-block;
     width: 50%;
+    /*background-color:green;*/
 }
 
 .tableone img {
@@ -80,19 +96,67 @@ textarea {
     width: 75%;
 }
 
-.tabletwo {
-    background-color: green;
+.mixer {
+
+    display: block;
+    background-color: yellow;
+    width: 30%
+
+}
+
+
+.leftequalizer {
+    float: left;
     display: inline-block;
     width: 50%;
-}
-
-.mixer {
-    background-color: yellow;
-}
-
-.beatpad {
     background-color: orange;
 }
+
+    .leftequalizer img {
+        display: block;
+        width: 100%;
+    }
+
+.rightequalizer {
+    display: inline-block;
+    width: 50%;
+    background-color: orange;
+}
+
+    .rightequalizer img {
+        display: block;
+        width: 100%;
+    }
+
+.crossfader {
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    background-color: purple;
+}
+
+    .crossfader img.slider {
+        margin: auto;
+        display: block;
+        width: 20%;
+    }
+
+        .crossfader img.switch {
+            position: absolute;
+            top: 19px;
+            left: 35%;
+            width: 30%;
+            margin: auto;
+            display: block;
+        }
+
+.beatpad {
+    display: none;
+    background-color: orange;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -156,9 +220,9 @@ textarea {
     *zoom: 1;
 }
 
-/* ==========================================================================
+ ==========================================================================
    Print styles
-   ========================================================================== */
+   ========================================================================== 
 
 @media print {
     *,
