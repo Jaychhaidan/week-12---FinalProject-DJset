@@ -56,19 +56,22 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-h1, h2, h3, h4, h5 {
+h3, h4, h5 {
     color: #FFF;
     text-align: center;
 }
 
-body {
-    background-image: url("../img/1850.jpg");
-}
+/*body {
+    background-image: url("../img/Untitled-1-01.png");
+    background-repeat: no-repeat;
+    background-size: 800px;
+    margin-top: 150px;
+}*/
 
 .tablebox {
-    width:80%;
+    width:800px;
     margin: auto;
-    background-image: url("../img/Untitled-1-01.png");
+    background-color: #242424;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -80,28 +83,27 @@ body {
     /*background-color: blue;*/
 }
 
+    .tableone img {
+        display: inline-block;
+        width: 75%;
+    }
+
 .tabletwo {
     display: inline-block;
     width: 50%;
     /*background-color:green;*/
 }
 
-.tableone img {
-    display: inline-block;
-    width: 75%;
-}
-
-.tabletwo img {
-    display: inline-block;
-    width: 75%;
-}
+    .tabletwo img {
+        display: inline-block;
+        width: 75%;
+    }
 
 .mixer {
 
     display: block;
     background-color: yellow;
-    width: 30%
-
+    width: 100px;
 }
 
 
@@ -153,10 +155,13 @@ body {
         }
 
 .beatpad {
-    display: none;
-    background-color: orange;
+    display: block;
 }
 
+    .beatpad button {
+        border: none;
+        border-radius: 10%;
+    }
 /* ==========================================================================
    Media Queries
    ========================================================================== */
