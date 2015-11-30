@@ -69,40 +69,19 @@ h3, h4, h5 {
 }*/
 
 .tablebox {
-    width:800px;
+    width:900px;
     margin: auto;
     background-color: #242424;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-.tableone {
-    float: left;
-    display: inline-block; 
-    width: 50%;
-    /*background-color: blue;*/
-}
-
-    .tableone img {
-        display: inline-block;
-        width: 75%;
-    }
-
-.tabletwo {
-    display: inline-block;
-    width: 50%;
-    /*background-color:green;*/
-}
-
-    .tabletwo img {
-        display: inline-block;
-        width: 75%;
-    }
-
 .mixer {
-
+    position: absolute;
+    margin-top: 185px;
+    margin-left: 385px;
     display: block;
-    background-color: yellow;
+/*    background-color: yellow;*/
     width: 100px;
 }
 
@@ -111,7 +90,7 @@ h3, h4, h5 {
     float: left;
     display: inline-block;
     width: 50%;
-    background-color: orange;
+/*    background-color: orange;*/
 }
 
     .leftequalizer img {
@@ -122,7 +101,7 @@ h3, h4, h5 {
 .rightequalizer {
     display: inline-block;
     width: 50%;
-    background-color: orange;
+/*    background-color: orange;*/
 }
 
     .rightequalizer img {
@@ -153,6 +132,88 @@ h3, h4, h5 {
             margin: auto;
             display: block;
         }
+.tableone {
+    padding: 5px;
+    float: left;
+    display: inline-block; 
+    width: 45%;
+}
+
+    .tableone img {
+        display: inline-block;
+        width: 80%;
+    }
+        
+    .tableone h3 {
+        text-align: left;
+    }
+    
+    .tableone h4 {
+        text-align: left;
+    }
+    
+    .tableone button.upload {
+        float: right;
+    }
+
+    .tableone button.playpause {
+        float: right;
+    }
+
+.bpmleft {
+    margin-top: 60px;
+    float: left;
+    display: inline-block; 
+    width: 15%;
+
+}
+    .bpmleft img {
+        width:100%;
+    }
+        .bpmleft img.switch {
+            position: absolute;
+            width: 15%;
+            display: block;
+        }
+
+.tabletwo {
+    margin-left: 70px;
+    padding: 5px;
+    display: inline-block;
+    width: 45%;
+
+}
+
+    .tabletwo img {
+        display: inline-block;
+        width: 80%;
+    }
+
+    .tabletwo h3 {
+        text-align: right;
+    }
+    
+    .tabletwo h4 {
+        text-align: right;
+    }
+    
+    .tabletwo button.upload {
+        float: left;
+    }
+
+    .tabletwo button.playpause {
+    }
+
+.bpmright {
+    margin-top: 60px;
+    float: right;
+    display: inline-block; 
+    width: 15%;
+
+}
+    .bpmright img {
+        width:100%;
+    }
 
 .beatpad {
     display: block;
