@@ -79,7 +79,7 @@ h3, h4, h5 {
 .mixer {
     position: absolute;
     margin-top: 185px;
-    margin-left: 385px;
+    margin-left: 380px;
     display: block;
 /*    background-color: yellow;*/
     width: 100px;
@@ -95,6 +95,7 @@ h3, h4, h5 {
 
     .leftequalizer img {
         display: block;
+        margin-top:20px;
         width: 100%;
     }
 
@@ -106,37 +107,34 @@ h3, h4, h5 {
 
     .rightequalizer img {
         display: block;
+        margin-left: 15px;
+        margin-top:20px;
         width: 100%;
     }
 
 .crossfader {
-    margin: auto;
     position: relative;
-    display: inline-block;
-    height: auto;
-    width: 100%;
+    margin-left: 405px;
+    width: 8%;
     background-color: purple;
+    transform: rotate(90deg);
 }
 
     .crossfader img.slider {
-        margin: auto;
-        display: block;
-        width: 20%;
+        width: 100%;
     }
 
         .crossfader img.switch {
             position: absolute;
-            top: 19px;
-            left: 35%;
-            width: 30%;
-            margin: auto;
-            display: block;
+            width: 100%;
         }
+
 .tableone {
     padding: 5px;
     float: left;
     display: inline-block; 
     width: 45%;
+/*    background-color: aqua;*/
 }
 
     .tableone img {
@@ -161,19 +159,20 @@ h3, h4, h5 {
     }
 
 .bpmleft {
+    position: relative;
     margin-top: 60px;
     float: left;
     display: inline-block; 
     width: 15%;
-
 }
     .bpmleft img {
         width:100%;
     }
         .bpmleft img.switch {
             position: absolute;
-            width: 15%;
+            top: 80px;
             display: block;
+            transform: rotate(90deg);
         }
 
 .tabletwo {
@@ -181,6 +180,7 @@ h3, h4, h5 {
     padding: 5px;
     display: inline-block;
     width: 45%;
+/*    background-color:antiquewhite; */
 
 }
 
@@ -205,6 +205,7 @@ h3, h4, h5 {
     }
 
 .bpmright {
+    position: relative;
     margin-top: 60px;
     float: right;
     display: inline-block; 
@@ -214,14 +215,27 @@ h3, h4, h5 {
     .bpmright img {
         width:100%;
     }
+        .bpmright img.switch {
+            position: absolute;
+            top: 80px;
+            display: block;
+            transform: rotate(90deg);
+        }
 
 .beatpad {
-    display: block;
+    width: 100%;
+    background-color: aquamarine;
 }
-
-    .beatpad button {
-        border: none;
-        border-radius: 10%;
+    .beatpadleft {
+        width: 50%;
+        float: left;
+        display: inline-block;
+        background-color: beige;
+    }
+    .beatpadright {
+        width: 50%;
+        display: inline-block;
+        background-color: beige;
     }
 /* ==========================================================================
    Media Queries
