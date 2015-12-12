@@ -23,3 +23,59 @@ $(function() {
 	$('.switch').draggable({ axis: 'y', containment: "parent"});
 
 });
+
+var button_1 = document.getElementById('button_1l');
+
+$('.button1l').on('click',function(e){
+	button_1.load();
+	button_1.play();
+});
+
+var button_1 = document.getElementById('button_1l');
+
+$('.button1l').on('click',function(e){
+	button_1.load();
+	button_1.play();
+});
+
+var button_1 = document.getElementById('button_1l');
+
+$('.button1l').on('click',function(e){
+	button_1.load();
+	button_1.play();
+});
+
+var button_1 = document.getElementById('button_1l');
+
+$('.button1l').on('click',function(e){
+	button_1.load();
+	button_1.play();
+});
+
+var button_1 = document.getElementById('button_1l');
+
+$('.button1l').on('click',function(e){
+	button_1.load();
+	button_1.play();
+});
+
+var button_1 = document.getElementById('button_1l');
+
+$('.button1l').on('click',function(e){
+	button_1.load();
+	button_1.play();
+});
+
+var button_1 = document.getElementById('button_1l');
+
+$('.button1l').on('click',function(e){
+	button_1.load();
+	button_1.play();
+});
+
+var button_1 = document.getElementById('button_1l');
+
+$('.button1l').on('click',function(e){
+	button_1.load();
+	button_1.play();
+});
