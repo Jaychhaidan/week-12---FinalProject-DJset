@@ -27,66 +27,89 @@
                             <img src="img/Untitled-1-04.png" alt="low">
                         </div>
                     </div>
+                
+                    <div class="crossfader">
+                        <img src="img/Untitled-1-08.png" class="slider" alt="mixer">
+                        <img src="img/Untitled-1-07.png" class="switch" alt="mixerswitch">
+                    </div>
+
                     <div class="tableone">
-                        <h3>song name</h3>
-                        <h3>duration</h3>
-                        <h4>BPM count</h4>
-<!--                            <button type="button" class="upload">upload</button>-->
-                            <div class="bpmleft">
-                                <img src="img/Untitled-1-05.png" alt="mixer">
-                                <img src="img/Untitled-1-07.png" alt="mixerswitch" class="switch">
-                            </div>
+                        
+                        <div id="audio-info">
+                            <span class="artist"></span> - <span class="title"></span>
+                        </div>
+                        
+                        <div id="tracker">
+                            <span id="duration"></span>
+                        </div>
+                        
+                        <div id="bpmleft">
+                            <img src="img/Untitled-1-05.png" alt="mixer">
+                            <img src="img/Untitled-1-07.png" alt="mixerswitch" class="switch">
+                        </div>
+
                         <img src="img/Untitled-1-03.png" alt="table1">
-                        <button type="button" class="minus">-</button>
+                        <button type="button" id="mute" onclick="muteOrUnmute()"></button>
                         <button type="button" class="plus">+</button>
-                        <button type="button" class="playpause">play/pause</button>
+                        <button type="button" id="playpause">play/pause</button>
+
+                        <div class=" mastervolleft">
+                            <img src="img/Untitled-1-08.png" class="slider" alt="mastervol">
+                            <img src="img/Untitled-1-07.png" class="switch" alt="mixerswitch">
+                        </div>
                     </div>
 
                     <div class="tabletwo">
-                        <h3>song name</h3>
-                        <h3>duration</h3>
-                        <h4>BPM count</h4>
-<!--                        <button type="button" class="upload">upload</button>-->
+
+                        <div id="audio-info">
+                            <span class="artist"></span> - <span class="title"></span>
+                        </div>
+                        
+                        <div id="tracker">
+                            <span id="duration"></span>
+                        </div>
+
                         <img src="img/Untitled-1-03.png" alt="table1">
-                            <div class="bpmright">
+                            <div id="bpmright">
                                 <img src="img/Untitled-1-05.png" alt="mixer">
                                 <img src="img/Untitled-1-07.png" class="switch" alt="mixerswitch">
                             </div>
-                        <button type="button" class="playpause">play/pause</button>
-                        <button type="button">-</button>
-                        <button type="button">+</button>
-                    </div>
-                        <div class="crossfader">
-                            <img src="img/Untitled-1-05.png" class="slider" alt="mixer">
+                        <button type="button" id="playpause">play/pause</button>
+                        <button type="button" class="minus">-</button>
+                        <button type="button" class="plus">+</button>
+                        
+                        <div class=" mastervolright">
+                            <img src="img/Untitled-1-08.png" class="slider" alt="mastervol">
                             <img src="img/Untitled-1-07.png" class="switch" alt="mixerswitch">
                         </div>
+                    </div>
                     <div class="beatpad">
                         <div class="beatpadleft">
 
                             <button type="button" class="button1l">
                                 <audio id="button_1l">
-                                        <source src="audi/C5.mp3" type="audio/mp3">
+                                        <source src="audi/sample1.wav" type="audio/wav">
                                     </audio>
                                     <span>sample1</span>
                             </button>
 
                             <button type="button" class="button2l">
                                 <audio id="button_2l">
-                                        <source src="audi/C5.mp3" type="audio/mp3">
+                                        <source src="audi/sample2.wav" type="audio/wav">
                                     </audio>
                                     <span>sample2</span>
                             </button>
 
                             <button type="button" class="button3l">
                                 <audio id="button_3l">
-                                        <source src="audi/C5.mp3" type="audio/mp3">
+                                        <source src="audi/sample3.wav" type="audio/wav">
                                     </audio>
                                     <span>sample3</span>
                             </button>
 
                             <button type="button" class="button4l">
                                 <audio id="button_4l">
-                                        <source src="audi/C5.mp3" type="audio/mp3">
+                                        <source src="audi/sample4.wav" type="audio/wav">
                                     </audio>
                                     <span>sample4</span>
                             </button>
@@ -96,34 +119,38 @@
 
                             <button type="button" class="button1r">
                                 <audio id="button_1r">
-                                        <source src="audi/C5.mp3" type="audio/mp3">
+                                        <source src="audi/sample5.wav" type="audio/wav">
                                     </audio>
                                     <span>sample1</span>
                             </button>
 
                             <button type="button" class="button2r">
                                 <audio id="button_2r">
-                                        <source src="audi/C5.mp3" type="audio/mp3">
+                                        <source src="audi/sample6.wav" type="audio/wav">
                                     </audio>
                                     <span>sample2</span>
                             </button>
 
                             <button type="button" class="button3r">
                                 <audio id="button_3r">
-                                        <source src="audi/C5.mp3" type="audio/mp3">
+                                        <source src="audi/sample7.wav" type="audio/wav">
                                     </audio>
                                     <span>sample3</span>
                             </button>
 
                             <button type="button" class="button4r">
                                 <audio id="button_4r">
-                                        <source src="audi/C5.mp3" type="audio/mp3">
+                                        <source src="audi/sample8.wav" type="audio/wav">
                                     </audio>
                                     <span>sample4</span>
                             </button>
                         </div>
 
                         </div>
+                        <audio id="track1" controls>
+                            <source src="media/bendlikebananna.mp3" type="audio/mp3"/>
+                        </audio>
+                        ></button>
                     </div>
                 </div>
             </div>

@@ -1,26 +1,22 @@
+body{
+    background: #000;
+}
+
 h3, h4, h5 {
     color: #FFF;
     text-align: center;
 }
 
-/*body {
-    background-image: url("../img/Untitled-1-01.png");
-    background-repeat: no-repeat;
-    background-size: 800px;
-    margin-top: 150px;
-}*/
-
 .tablebox {
     width:900px;
     margin: auto;
-    background-color: #242424;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background: url(../img/bg.png);
+    border-radius: 20px;
 }
 
 .mixer {
     position: absolute;
-    margin-top: 185px;
+    margin-top: 100px;
     margin-left: 380px;
     display: block;
 /*    background-color: yellow;*/
@@ -56,19 +52,23 @@ h3, h4, h5 {
 
 .crossfader {
     position: relative;
-    margin-left: 405px;
-    width: 8%;
-    background-color: purple;
-    transform: rotate(90deg);
+    margin-left: 325px;
+    top:370px;
+    width: 25%;
+
 }
 
     .crossfader img.slider {
         width: 100%;
+        position: absolute;
     }
 
         .crossfader img.switch {
-            position: absolute;
-            width: 100%;
+            width: 30%;
+            display: block;
+            width: 25%;
+            position: relative;
+            left: 80px;
         }
 
 .tableone {
@@ -96,34 +96,80 @@ h3, h4, h5 {
         float: right;
     }
 
-    .tableone button.playpause {
-        float: right;
+    .tableone #playpause {
+        left: 230px;
+        padding: 8px;
+        color: white;
+        border-width: 5px;
+        border-radius: 10px;
+        border-color: white;
+        background-color: black;
+        position: relative;
+        top: 75px;
     }
+    
+.tableone button.plus {
+        color: white;
+        border-width: 5px;
+        border-radius: 10px;
+        border-color: white;
+        background-color: black;
+        position: relative;
 
-.bpmleft {
+}
+
+.tableone button.minus {
+        color: white;
+        border-width: 5px;
+        border-radius: 10px;
+        border-color: white;
+        background-color: black;
+        position: relative;
+
+}
+
+#bpmleft {
     position: relative;
     margin-top: 60px;
     float: left;
     display: inline-block; 
     width: 15%;
 }
-    .bpmleft img {
+    #bpmleft img {
         width:100%;
     }
-        .bpmleft img.switch {
+        #bpmleft img.switch {
             position: absolute;
             top: 80px;
             display: block;
             transform: rotate(90deg);
         }
 
+.mastervolleft {
+    position: relative;
+    margin-top:20px;
+    margin-left: 50px;
+    width:55%;
+    background-color: purple;
+}
+
+.mastervolleft img {
+    width:100%;
+    position: absolute;
+    float: left;
+}
+    .mastervolleft img.switch {
+        display: block;
+        width: 25%;
+        position: relative;
+        left: 80px;
+    }
+
 .tabletwo {
     margin-left: 70px;
     padding: 5px;
     display: inline-block;
     width: 45%;
-/*    background-color:antiquewhite; */
-
 }
 
     .tabletwo img {
@@ -143,10 +189,39 @@ h3, h4, h5 {
         float: left;
     }
 
-    .tabletwo button.playpause {
+    #playpause {
+        padding: 8px;
+        color: white;
+        border-width: 5px;
+        border-radius: 10px;
+        border-color: white;
+        background-color: black;
+        position: relative;
+        top: 75px;
     }
 
-.bpmright {
+.tabletwo button.minus {
+    color: white;
+        border-width: 5px;
+        border-radius: 10px;
+        border-color: white;
+        background-color: black;
+        position: relative;
+        float: right;
+}
+
+.tabletwo button.plus {
+    color: white;
+        border-width: 5px;
+        border-radius: 10px;
+        border-color: white;
+        background-color: black;
+        position: relative;
+        float: right;
+        margin-right: 5px;
+    }
+
+#bpmright {
     position: relative;
     margin-top: 60px;
     float: right;
@@ -154,30 +229,51 @@ h3, h4, h5 {
     width: 15%;
 
 }
-    .bpmright img {
+    #bpmright img {
         width:100%;
     }
-        .bpmright img.switch {
+        #bpmright img.switch {
             position: absolute;
             top: 80px;
             display: block;
             transform: rotate(90deg);
         }
 
-.beatpad span {
+.mastervolright {
+    left: 130px;
+    width:55%;
+    position: relative;
+    margin-top: 20px;
+}
 
+.mastervolright img {
+    width:100%;
+    position: absolute;
+    float: right;
+    
+}
+
+.mastervolright img.switch {
+    display: block;
+    width: 25%;
+    position: relative;
+    right: 100px;
+}
+
+.beatpad span {
+    
 }
 
 .beatpad {
+    margin-top: 70px;
     width: 100%;
 }
 
-/*    .beatpadleft {
+    .beatpadleft {
         width: 50%;
         float: right;
         display: inline-block;
-        background-color: aquamarine;
-    }*/
+    }
     
         .beatpadleft button {
             margin-bottom: 50px;
@@ -192,11 +288,11 @@ h3, h4, h5 {
             border-radius: 10%;
 }
 
-/*    .beatpadright {
+    .beatpadright {
         
         width: 50%;
         display: inline-block;
-    }*/
+    }
 
         .beatpadright button {
             margin-bottom: 50px;
@@ -211,5 +307,11 @@ h3, h4, h5 {
             border-radius: 10%;
         }
 
-
-
+.pressed {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4096ee+10,3143b7+76 */
+    background: #4096ee; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #4096ee 10%, #3143b7 76%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #4096ee 10%,#3143b7 76%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #4096ee 10%,#3143b7 76%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#3143b7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
