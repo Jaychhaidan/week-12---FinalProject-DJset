@@ -1,26 +1,25 @@
 
+//load track left
 var track1 = document.getElementById('track1');
-var playButtonl = document.getElementById('playpause');
-var muteButton = document.getElementById('minus');
+var playButtonl = document.getElementById('playpausel');
+var muteButtonl = document.getElementById('mutel');
+var cover1 = document.getElementById('cover1');
 
-//information tags
-var duration = document.getElementById('fullduration');
-var currentTime = document.getElementById('currentTime');
-
-playButtonl.addEventListener('click',playOrPause,false);
+// playButtonl.addEventListener('click',playOrPausel,false);
 // muteButton.addEventListener('click', muteOrUnmute, false);
 
 
-function playOrPause () {
+function playOrPausel () {
 	if(!track1.paused && !track1.ended)  {
-		track1.pause();
+		track1.pause(); 
 	}
 	else{
 		track1.play();
+		cover1.style.visibility = 'visible'; 
 	}
 }
 
-function muteOrUnmute () {
+function muteOrUnmutel () {
 	if(track1.muted == true) {
 		track1.muted = false;
 	}
@@ -28,17 +27,51 @@ function muteOrUnmute () {
 		track1.muted = true;
 	}
 }
+
+//load track right
+var track2 = document.getElementById('track2');
+var playButtonr = document.getElementById('playpauser');
+var muteButtonr = document.getElementById('muter');
+
+//information tags
+var duration = document.getElementById('fullduration');
+var currentTime = document.getElementById('currentTime');
+
+playButtonr.addEventListener('click',playOrPauser,false);
+// muteButton.addEventListener('click', muteOrUnmute, false);
+
+
+function playOrPauser () {
+	if(!track2.paused && !track2.ended)  {
+		track2.pause();
+	}
+	else{
+		track2.play();
+		cover2.style.visibility = 'visible'; 
+	}
+}
+
+function muteOrUnmuter () {
+	if(track2.muted == true) {
+		track2.muted = false;
+	}
+	else{
+		track2.muted = true;
+	}
+}
+
 //leftbpm
 $(function() {
 	$('img.switch').draggable({ axis: 'y', containment: "parent"});
 });
+
 //rightbpm
 $(function() {
 	$('img.switch').draggable({ axis: 'y', containment: "parent"});
 
 });
 
-//beatpad top
+//beatpad left
 var button_1 = document.getElementById('button_1l');
 
 $('.button1l').on('click',function(e){
@@ -67,7 +100,7 @@ $('.button4l').on('click',function(e){
 	button_4.play();
 });
 
-//beatpad bottom
+//beatpad right
 var button_5 = document.getElementById('button_1r');
 
 $('.button1r').on('click',function(e){
@@ -96,61 +129,11 @@ $('.button4r').on('click',function(e){
 	button_8.play();
 });
 
-$('.beatpad').on('click', function() {
+// $('.beatpad').on('click', function() {
 
-$(".button1l").addClass("pressed")
+// $(".button1l").addClass("pressed")
 
-});
-
-// function initAudio(element){
-// 	var song = element.attr('song');
-//     var title = element.text();
-//     var cover = element.attr('cover');
-//     var artist = element.attr('artist');
-
-// 	//Create a New Audio Object
-// 	audio = new Audio('media/' + song);
-	
-// 	if(!audio.currentTime){
-// 		$('#duration').html('0.00');
-// 	}
-
-// 	$('#audio-player .title').text(title);
-//     $('#audio-player .artist').text(artist);
-	
-// 	//Insert Cover Image
-// 	$('img.cover').attr('src','images/covers/' + cover);
-	
-// 	$('#playlist li').removeClass('active');
-//     element.addClass('active');
-// }
-
-// //play buttons (hooked up)
-// $('.playpause').click(function(){
-// 	console.log('works');
-// 	audio.play();
-// 	$('#duration').fadeIn(400);
-// 	showDuration();
 // });
-
-// function showDuration(){
-// 	$(audio).bind('timeupdate', function(){
-// 		//Get hours and minutes
-// 		var s = parseInt(audio.currentTime % 60);
-// 		var m = parseInt((audio.currentTime / 60) % 60);
-// 		//Add 0 if seconds less than 10
-// 		if (s < 10) {
-// 			s = '0' + s;
-// 		}
-// 		$('#duration').html(m + '.' + s);	
-// 		var value = 0;
-// 		if (audio.currentTime > 0) {
-// 			value = Math.floor((100 / audio.duration) * audio.currentTime);
-// 		}
-// 		$('#progress').css('width',value+'%');
-// 	});
-// }
-
 
 
 

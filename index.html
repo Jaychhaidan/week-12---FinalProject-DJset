@@ -34,24 +34,18 @@
                     </div>
 
                     <div class="tableone">
-                        
-                        <div id="audio-info">
-                            <span class="artist"></span> - <span class="title"></span>
-                        </div>
-                        
-                        <div id="tracker">
-                            <span id="duration"></span>
-                        </div>
-                        
+
                         <div id="bpmleft">
                             <img src="img/Untitled-1-05.png" alt="mixer">
                             <img src="img/Untitled-1-07.png" alt="mixerswitch" class="switch">
                         </div>
 
-                        <img src="img/Untitled-1-03.png" alt="table1">
-                        <button type="button" id="mute" onclick="muteOrUnmute()"></button>
+                        <img src="img/Untitled-1-03.png" alt="table1" class="leftturn">
+                        <img src="img/cover1.png" alt="COVER1" id="cover1">
+
+                        <button type="button" id="mutel" onclick="muteOrUnmutel()">-</button>
                         <button type="button" class="plus">+</button>
-                        <button type="button" id="playpause">play/pause</button>
+                        <button type="button" id="playpausel" onclick="playOrPausel()">play/pause</button>
 
                         <div class=" mastervolleft">
                             <img src="img/Untitled-1-08.png" class="slider" alt="mastervol">
@@ -61,22 +55,17 @@
 
                     <div class="tabletwo">
 
-                        <div id="audio-info">
-                            <span class="artist"></span> - <span class="title"></span>
+                        <div id="bpmright">
+                            <img src="img/Untitled-1-05.png" alt="mixer">
+                            <img src="img/Untitled-1-07.png" class="switch" alt="mixerswitch">
                         </div>
                         
-                        <div id="tracker">
-                            <span id="duration"></span>
-                        </div>
+                        <img src="img/Untitled-1-03.png" alt="table2" class="rightturn">
+                        <img src="img/cover2.png" alt="COVER2" id="cover2">
 
-                        <img src="img/Untitled-1-03.png" alt="table1">
-                            <div id="bpmright">
-                                <img src="img/Untitled-1-05.png" alt="mixer">
-                                <img src="img/Untitled-1-07.png" class="switch" alt="mixerswitch">
-                            </div>
-                        <button type="button" id="playpause">play/pause</button>
-                        <button type="button" class="minus">-</button>
+                        <button type="button" id="muter" onclick="muteOrUnmuter()">-</button>
                         <button type="button" class="plus">+</button>
+                        <button type="button" id="playpauser">play/pause</button>
                         
                         <div class=" mastervolright">
                             <img src="img/Untitled-1-08.png" class="slider" alt="mastervol">
@@ -148,6 +137,10 @@
 
                         </div>
                         <audio id="track1" controls>
+                            <source src="media/trackload1.mp3" type="audio/mp3"/>
+                        </audio>
+
+                        <audio id="track2" controls>
                             <source src="media/bendlikebananna.mp3" type="audio/mp3"/>
                         </audio>
                         ></button>
