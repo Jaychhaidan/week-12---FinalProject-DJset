@@ -15,6 +15,8 @@
     <body>
         <div class="container">
             <div class="tablebox">
+                <h1> Interactive DJ Set</h1>
+                
                     <div class="mixer">
                         <div class="leftequalizer">
                             <img src="img/Untitled-1-04.png" alt="high">
@@ -40,8 +42,12 @@
                             <img src="img/Untitled-1-07.png" alt="mixerswitch" class="switch">
                         </div>
 
-                        <img src="img/Untitled-1-03.png" alt="table1" class="leftturn">
-                        <img src="img/cover1.png" alt="COVER1" id="cover1">
+                        <div class="leftturn">
+                            <img src="img/Untitled-1-03.png" alt="table1">
+                            <div class="coverleft">
+                            <img src="img/cover1.png" alt="COVER1" id="cover1">
+                            </div>
+                        </div>
 
                         <button type="button" id="mutel" onclick="muteOrUnmutel()">-</button>
                         <button type="button" class="plus">+</button>
@@ -60,8 +66,12 @@
                             <img src="img/Untitled-1-07.png" class="switch" alt="mixerswitch">
                         </div>
                         
-                        <img src="img/Untitled-1-03.png" alt="table2" class="rightturn">
+                    <div class="rightturn">
+                        <img src="img/Untitled-1-03.png" alt="table2">
+                        <div class="coverright">
                         <img src="img/cover2.png" alt="COVER2" id="cover2">
+                        </div>
+                        </div>
 
                         <button type="button" id="muter" onclick="muteOrUnmuter()">-</button>
                         <button type="button" class="plus">+</button>
@@ -77,28 +87,28 @@
 
                             <button type="button" class="button1l">
                                 <audio id="button_1l">
-                                        <source src="audi/sample1.wav" type="audio/wav">
+                                        <source src="audio/sample1.wav" type="audio/wav">
                                     </audio>
                                     <span>sample1</span>
                             </button>
 
                             <button type="button" class="button2l">
                                 <audio id="button_2l">
-                                        <source src="audi/sample2.wav" type="audio/wav">
+                                        <source src="audio/sample2.wav" type="audio/wav">
                                     </audio>
                                     <span>sample2</span>
                             </button>
 
                             <button type="button" class="button3l">
                                 <audio id="button_3l">
-                                        <source src="audi/sample3.wav" type="audio/wav">
+                                        <source src="audio/sample3.mp3" type="audio/mp3">
                                     </audio>
                                     <span>sample3</span>
                             </button>
 
                             <button type="button" class="button4l">
                                 <audio id="button_4l">
-                                        <source src="audi/sample4.wav" type="audio/wav">
+                                        <source src="audio/sample4.wav" type="audio/wav">
                                     </audio>
                                     <span>sample4</span>
                             </button>
@@ -108,47 +118,48 @@
 
                             <button type="button" class="button1r">
                                 <audio id="button_1r">
-                                        <source src="audi/sample5.wav" type="audio/wav">
+                                        <source src="audio/sample5.wav" type="audio/wav">
                                     </audio>
                                     <span>sample1</span>
                             </button>
 
                             <button type="button" class="button2r">
                                 <audio id="button_2r">
-                                        <source src="audi/sample6.wav" type="audio/wav">
+                                        <source src="audio/sample6.wav" type="audio/wav">
                                     </audio>
                                     <span>sample2</span>
                             </button>
 
                             <button type="button" class="button3r">
                                 <audio id="button_3r">
-                                        <source src="audi/sample7.wav" type="audio/wav">
+                                        <source src="audio/sample7.wav" type="audio/wav">
                                     </audio>
                                     <span>sample3</span>
                             </button>
 
                             <button type="button" class="button4r">
                                 <audio id="button_4r">
-                                        <source src="audi/sample8.wav" type="audio/wav">
+                                        <source src="audio/sample8.wav" type="audio/wav">
                                     </audio>
                                     <span>sample4</span>
                             </button>
                         </div>
 
                         </div>
-                        <audio id="track1" controls>
+                        <audio id="track1">
                             <source src="media/trackload1.mp3" type="audio/mp3"/>
                         </audio>
 
-                        <audio id="track2" controls>
-                            <source src="media/bendlikebananna.mp3" type="audio/mp3"/>
+                        <audio id="track2">
+                            <source src="media/trackload2.mp3" type="audio/mp3"/>
                         </audio>
                         ></button>
                     </div>
                 </div>
             </div>
 
-
+<h2> Interface Development I</h2>
+<h3> Version 1.08 </h3>
 
 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

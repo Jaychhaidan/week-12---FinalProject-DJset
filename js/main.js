@@ -134,6 +134,3 @@ $('.button4r').on('click',function(e){
 // $(".button1l").addClass("pressed")
 
 // });
-
-
-
